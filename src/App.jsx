@@ -75,7 +75,10 @@ function App() {
 
   return (
     <div>
-      <h2>Olympic Medal Tracker</h2>
+      <header>
+        <h2>2024 Paris Olympics</h2>
+        <h4>Olympic Medal Tracker</h4>
+      </header>
 
       <form onSubmit={handlerAddCountry}>
         <div>
