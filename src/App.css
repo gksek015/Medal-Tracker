@@ -5,19 +5,6 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
 
 body {
   background-color: #f4f4f9;
@@ -32,14 +19,9 @@ header {
   padding: 1rem 0;
 }
 
-h2 {
-  margin: 0;
-}
+h2 {margin: 0;}
 
-h4 {
-  margin: 0;
-  font-weight: normal;
-}
+h4 {margin: 0;}
 
 label {
   margin-right: 10px;
@@ -53,7 +35,7 @@ form {
   max-width: 300px;
   margin: 20px auto;
   background-color: #fff;
-  border-radius: 8px;
+  border-radius: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
