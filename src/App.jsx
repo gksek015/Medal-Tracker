@@ -6,19 +6,31 @@ function App() {
   const [gold, setGold] = useState(0);
   const [silver, setSilver] = useState(0);
   const [bronze, setBronze] = useState(0);
-  //const [list, setList] = useState(0);
   const [countries, setCountries] = useState([]);
 
   // 국가추가 & 금메달 우선 배열
   const handlerAddCountry = (e) => {
     e.preventDefault();
+
+    if (!country || gold === "" || silver === "" || bronze === "") {
+      alert("모든 필드를 채워주세요!");
+      return;
+    }
+
+    const alreadyCountry = countries.some((props) => props.country === country);
+    if (alreadyCountry) {
+      alert("이미 등록된 국가입니다. 업데이트를 해주세요!");
+      return;
+    }
+
     const newCountry = {
       id: new Date().getTime(),
-      country: country,
-      gold: gold,
-      silver: silver,
-      bronze: bronze,
+      country,
+      gold: parseInt(gold),
+      silver: parseInt(silver),
+      bronze: parseInt(bronze),
     };
+
     const sortGold = [...countries, newCountry].sort((a, b) => b.gold - a.gold);
     setCountries(sortGold);
 
@@ -87,7 +99,7 @@ function App() {
             type="text"
             value={country}
             onChange={inputCountry}
-            placeholder="나라를 입력하세요"
+            placeholder="국가를 입력하세요"
           />
         </div>
         <div>

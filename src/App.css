@@ -26,7 +26,8 @@ h4 {margin: 0;}
 label {
   margin-right: 10px;
 }
-/* 메달 입력 폼 */
+
+
 form {
   display: flex;
   flex-direction: column;
@@ -65,7 +66,7 @@ form button:hover {
   background-color: #0a5c0a
 }
 
-/* 테이블 스타일 */
+
 table {
   width: 100%;
   margin: 20px auto;
