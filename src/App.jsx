@@ -21,6 +21,12 @@ function App() {
     };
     const sortGold = [...countries, newCountry].sort((a, b) => b.gold - a.gold);
     setCountries(sortGold);
+
+    // 입력초기화
+    setCountry("");
+    setGold(0);
+    setSilver(0);
+    setBronze(0);
   };
 
   // 국가 input
@@ -59,6 +65,12 @@ function App() {
     });
     const sortGold = newCountries.sort((a, b) => b.gold - a.gold);
     setCountries(sortGold);
+
+    // 입력 초기화
+    setCountry("");
+    setGold(0);
+    setSilver(0);
+    setBronze(0);
   };
 
   return (
