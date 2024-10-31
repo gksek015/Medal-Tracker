@@ -70,6 +70,13 @@ function App() {
   // 나라업데이트
   const handlerUpdateCountry = (e) => {
     e.preventDefault();
+
+    const nonCountry = countries.some(item => item.country === country);
+    if (!nonCountry) {
+      alert("존재하지 않는 국가입니다.");
+      return;
+    };
+
     const newCountries = countries.map((item) => {
       if (item.country === country) {
         return { country, gold, silver, bronze };
@@ -91,6 +98,7 @@ function App() {
   return (
     <div>
       <header>
+        <img src='/2024년_하계_올림픽_로고.png' alt="Olympics Logo"></img>
         <h2>2024 Paris Olympics</h2>
         <h4>Olympic Medal Tracker</h4>
       </header>

@@ -12,11 +12,16 @@ body {
   padding: 0;
 }
 
+img {
+  width: 10%;
+
+}
+
 header {
   background-color: green;
   color: white;
   text-align: center;
-  padding: 1rem 0;
+  padding: 10px;
 }
 
 h2 {margin: 0;}
