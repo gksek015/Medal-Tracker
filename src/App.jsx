@@ -26,9 +26,9 @@ function App() {
     const newCountry = {
       id: new Date().getTime(),
       country,
-      gold: parseInt(gold),
-      silver: parseInt(silver),
-      bronze: parseInt(bronze),
+      gold: gold,
+      silver: silver,
+      bronze: bronze,
     };
 
     const sortGold = [...countries, newCountry].sort((a, b) => b.gold - a.gold);
