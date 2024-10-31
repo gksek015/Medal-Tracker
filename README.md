@@ -1,9 +1,25 @@
-# React + Vite
+# @ React 기초 주차 - [Olympic Medal Tracker]
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🔗프로젝트 소개
+2024 파리 올림픽의 메달 집계를 관리하는 Olympic Medal Tracker입니다.
+- - -
 
-Currently, two official plugins are available:
+### 🕓프로젝트 기간
+2024년 10월 29일 ~ 2024년 11월 1일
+- - -
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Medal-Tracker
+### ⚒기술 스택
+<div>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white" />
+	<img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=Javascript&logoColor=white" />
+	<img src="https://img.shields.io/badge/HTML-E34F26?style=flat&logo=HTML&logoColor=white" />
+	<img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=CSS&logoColor=white" />
+</div>
+
+- - -
+
+### 📌주요기능
++ 금메달 순 정렬
++ 추가, 업데이트 기능
++ 삭제 기능
+  
