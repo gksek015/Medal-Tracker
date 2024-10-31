@@ -16,7 +16,7 @@ const Medal = ({gold, silver, bronze, inputGold, inputSilver, inputBronze, handl
                 <input type="number" value={bronze} onChange={inputBronze} />
             </div>
             <div>
-                <button type="submit" onClick={handleAdd}>추가</button>
+                <button type="submit" onClick={handleAdd}>국가추가</button>
                 <button type="button" onClick={handleUpdate}>
                     업데이트</button>
             </div>
