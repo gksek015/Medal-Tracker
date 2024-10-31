@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../src/App.css"
+import Medal from "./Medal";
 
 function App() {
   const [country, setCountry] = useState("");
@@ -75,6 +76,7 @@ function App() {
         return item;
       }
     });
+    
     const sortGold = newCountries.sort((a, b) => b.gold - a.gold);
     setCountries(sortGold);
 
@@ -102,24 +104,16 @@ function App() {
             placeholder="국가를 입력하세요"
           />
         </div>
-        <div>
-          <label htmlFor="gold">금메달</label>
-          <input type="number" value={gold} onChange={inputGold} />
-        </div>
-        <div>
-          <label htmlFor="silver">은메달</label>
-          <input type="number" value={silver} onChange={inputSilver} />
-        </div>
-        <div>
-          <label htmlFor="bronze">동메달</label>
-          <input type="number" value={bronze} onChange={inputBronze} />
-        </div>
-        <div>
-          <button type="submit">추가</button>
-          <button type="button" onClick={handlerUpdateCountry}>
-            업데이트
-          </button>
-        </div>
+        
+        <Medal
+        gold={gold}
+        silver={silver}
+        bronze={bronze}
+        inputGold={inputGold}
+        inputSilver={inputSilver}
+        inputBronze={inputBronze}
+        handleAdd={handlerAddCountry}
+        handleUpdate={handlerUpdateCountry}/>
       </form>
 
       <table>
