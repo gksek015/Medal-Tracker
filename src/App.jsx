@@ -19,8 +19,8 @@ function App() {
       return;
     }
 
-    const alreadyCountry = countries.some((item) => item.country === country);
-    if (alreadyCountry) {
+    const alreadyCountry = countries.map(item => item.country);
+    if (alreadyCountry.includes(country)) {
       alert("이미 등록된 국가입니다. 업데이트를 해주세요!");
       return;
     }
