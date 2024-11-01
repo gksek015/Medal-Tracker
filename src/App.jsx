@@ -19,7 +19,7 @@ function App() {
       return;
     }
 
-    const alreadyCountry = countries.some((props) => props.country === country);
+    const alreadyCountry = countries.some((item) => item.country === country);
     if (alreadyCountry) {
       alert("이미 등록된 국가입니다. 업데이트를 해주세요!");
       return;
